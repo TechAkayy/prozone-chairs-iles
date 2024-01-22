@@ -1,22 +1,22 @@
-<script client:load>
-  // function loadjscssfile(filename, filetype) {
-  //   let cssNode
-  //   if (filetype == 'js') {
-  //     cssNode = document.createElement('script')
-  //     cssNode.setAttribute('type', 'text/javascript')
-  //     cssNode.setAttribute('src', filename)
-  //   } else if (filetype == 'css') {
-  //     cssNode = document.createElement('link')
-  //     cssNode.setAttribute('rel', 'stylesheet')
-  //     cssNode.setAttribute('type', 'text/css')
-  //     cssNode.setAttribute('href', filename)
-  //   }
-  //   if (typeof cssNode != 'undefined')
-  //     document.getElementsByTagName('head')[0].appendChild(cssNode)
-  // }
-  // loadjscssfile('https://cdn.jsdelivr.net/npm/pikaday/pikaday.js', 'js')
-  // loadjscssfile('https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css', 'css')
-</script>
+<!-- <script client:load>
+  function loadjscssfile(filename, filetype) {
+    let cssNode
+    if (filetype == 'js') {
+      cssNode = document.createElement('script')
+      cssNode.setAttribute('type', 'text/javascript')
+      cssNode.setAttribute('src', filename)
+    } else if (filetype == 'css') {
+      cssNode = document.createElement('link')
+      cssNode.setAttribute('rel', 'stylesheet')
+      cssNode.setAttribute('type', 'text/css')
+      cssNode.setAttribute('href', filename)
+    }
+    if (typeof cssNode != 'undefined')
+      document.getElementsByTagName('head')[0].appendChild(cssNode)
+  }
+  loadjscssfile('https://cdn.jsdelivr.net/npm/pikaday/pikaday.js', 'js')
+  loadjscssfile('https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css', 'css')
+</script> -->
 
 <script setup lang="ts">
   const date = ref('')
@@ -49,6 +49,15 @@
   // }
 </script>
 <template>
+  <!-- <Head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  </Head> -->
+
   <div id="appointment" class="p-6">
     <form>
       <div class="flex items-center justify-center">
