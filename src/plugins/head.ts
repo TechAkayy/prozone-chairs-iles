@@ -23,12 +23,7 @@ export const headConfig = ({ frontmatter, site }) => {
       { property: 'author', content: site.author },
       { property: 'keywords', content: computed(() => frontmatter.tags) },
     ],
-    script: [
-      { children: checkDarkTheme, once: true } as TurboScript,
-      {
-        src: 'https://cdn.jsdelivr.net/npm/pikaday/pikaday.js',
-      },
-    ],
+    script: [{ children: checkDarkTheme, once: true } as TurboScript],
   }
 }
 

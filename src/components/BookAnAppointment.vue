@@ -18,6 +18,19 @@
   loadjscssfile('https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css', 'css')
 </script> -->
 
+<!-- <script client:visible>
+export async function onLoad() {
+  const Pikaday = (await import("https://unpkg.com/pikaday@latest")).default;
+  let picker = new Pikaday({
+    field: document.getElementById("datepicker"),
+    format: "D MMM YYYY",
+    onSelect: function () {
+      console.log(this.getMoment().format("Do MMMM YYYY"));
+    },
+  });
+}
+</script> -->
+
 <script setup lang="ts">
   const date = ref('')
   const datePicker = ref(null)
@@ -49,16 +62,18 @@
   // }
 </script>
 <template>
-  <!-- <Head>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
-  </Head> -->
-
   <div id="appointment" class="p-6">
+    <!-- <Head>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
+      />
+      <component
+        :is="'script'"
+        src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"
+      ></component>
+    </Head> -->
     <form>
       <div class="flex items-center justify-center">
         <div class="p-1">

@@ -107,19 +107,6 @@ export default defineConfig({
   },
 
   vite: {
-    // build: {
-    //   rollupOptions: {
-    //     external: [
-    //       // '/pgia.js',
-    //       'pikaday',
-    //     ],
-    //     output: {
-    //       globals: {
-    //         pikaday: 'Pikaday',
-    //       },
-    //     },
-    //   },
-    // },
     plugins: [
       // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
       AutoImportAPIs({
